@@ -13,7 +13,6 @@
 }
 
 body {
-    /* font-family: 'Roboto', sans-serif; */
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 300;
 }
@@ -26,16 +25,7 @@ a {
     text-decoration: none;
 }
 
-.ml-1 {
-    margin-left: .7rem;
-}
-.about-header {
-    margin-bottom: 1rem;
-}
-.work-features {
-    margin-bottom: .5rem;
-}
-
+/* Header and Intro */
 header {
     background: url('../img/header_image.jpg') no-repeat center center/cover;
     height: 43.5rem;
@@ -65,11 +55,7 @@ header {
 .header__nav-text {
     font-size: 1.2rem;
 }
-.align-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .intro {
     margin-top: -3rem;
     height: 100%;
@@ -79,7 +65,6 @@ header {
     align-items: center;
 
 }
-
 .intro h3 {
     font-size: 2.85rem;
     text-align: center;
@@ -141,6 +126,9 @@ header {
     visibility: hidden;
     opacity: 0;
 }
+.about-header {
+    margin-bottom: 1rem;
+}
 .about-body {
     margin: 0 20%;
     height: 100%;
@@ -148,6 +136,13 @@ header {
     justify-content: center;
     align-items: center;
 
+}
+.about.show {
+    opacity: 1;
+    visibility: visible;
+}
+.about.show .info-box {
+    transform: translateX(0);
 }
 .info-box {
     min-height: 20rem;
@@ -159,13 +154,6 @@ header {
     transform: translateX(-120rem);
     transition: all .3s ease-in-out;
     
-}
-.about.show {
-    opacity: 1;
-    visibility: visible;
-}
-.about.show .info-box {
-    transform: translateX(0);
 }
 .skills-box {
     min-height: 20rem;
@@ -208,8 +196,25 @@ header {
     object-fit: cover;
     height: 15rem;
     width: 15rem;
-    border-radius: 50%;
+    border-radius: 25%;
 }
+
+
+
+.ml-1 {
+    margin-left: .7rem;
+}
+.work-features {
+    margin-bottom: .5rem;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .work {
     /* height: 33rem; */
@@ -397,7 +402,7 @@ header {
     background: url('../img/coded_prof_intro.jpg') no-repeat center center/cover;
     width: 9rem;
     height: 9rem;
-    border-radius: 50%;
+    border-radius: 25%;
     transform: translateY(-120rem);
     animation: slidedown var(--animation-speed) forwards ease;
 }
