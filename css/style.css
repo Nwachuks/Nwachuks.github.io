@@ -27,7 +27,7 @@ a {
 
 /* Header and Intro */
 header {
-    background: url('../img/header_image.jpg') no-repeat center center/cover;
+    background: url('../img/header_img.jpg') no-repeat center center/cover;
     height: 43.5rem;
     color: #f5f5f5;
 }
@@ -94,6 +94,14 @@ header {
 .intro h3, .intro p {
     width: 48%;
 }
+.intro-image {
+    background: url('../img/coded_prof_intro.jpg') no-repeat center center/cover;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 25%;
+    transform: translateY(-120rem);
+    animation: slidedown var(--animation-speed) forwards ease;
+}
 .intro a {
     margin-top: .7rem;
     background: #f04;
@@ -136,6 +144,12 @@ header {
     justify-content: center;
     align-items: center;
 
+}
+.about-photo {
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 25%;
 }
 .about.show {
     opacity: 1;
@@ -182,7 +196,7 @@ header {
     align-items: center;
     margin-bottom: 1rem;
 }
-.progressive-bar div{
+.progressive-bar div {
     background: #f04;
     height: 100%;
     width: 30%;
@@ -190,32 +204,51 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.about-photo {
-    object-fit: cover;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 25%;
-}
-
-
-
-.ml-1 {
-    margin-left: .7rem;
-}
-.work-features {
-    margin-bottom: .5rem;
-}
-
-.align-center {
+.progressive-bar .js {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 30%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.progressive-bar .ng {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.progressive-bar .npm {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+.progressive-bar .cs {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+.progressive-bar .dnet {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 40%;
+    display: flex;
+}
+.progressive-bar .cicd {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 30%;
+    display: flex;
+}
+.progressive-bar .ds {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 40%;
+    display: flex; 
 }
 
-
-
+/* Work */
 .work {
     /* height: 33rem; */
     margin-bottom: 1rem;
@@ -227,7 +260,6 @@ header {
     text-transform: uppercase;
     position: relative;
 }
-
 .work-container {
     width: 100%;
     height: 100%;
@@ -237,7 +269,6 @@ header {
     margin-top: .6rem;
 }
 .work-tab {
-    /* box-shadow: 1px 1px 2px #f5f5f5, -1px -1px 2px #f5f5f5;; */
     width: 73%;
     border: 1px solid #f5f5f5;
     border-left: 4px solid #f04;
@@ -263,7 +294,6 @@ header {
 .box {
     flex: 1;
     margin-right: 1.9rem;
-
 }
 .work-1 {
     object-fit: cover;
@@ -281,28 +311,25 @@ header {
     object-fit: cover;
     background: url('../img/work_cloudify.png') no-repeat center center/cover;
 }
-.btn-group {
-    display: flex;
-    width: 100%;
-    margin-top: .3rem;
-}
 .work-con {
     flex: 1;
     position: relative;
     min-height: 27rem;
-
-}
-.text-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
+    
 }
 .work-flex {
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
+}
+.work-features {
+    margin-bottom: .5rem;
+}
+.btn-group {
+    display: flex;
+    width: 100%;
+    margin-top: .3rem;
 }
 .flex-col {
     flex: 1;
@@ -312,13 +339,6 @@ header {
 .flex-col p {
     padding-top: .6rem;
     line-height: 1.7rem;
-}
-.text-header p{
-    width: 100%;
-    padding-top: 1rem;
-    font-size: 1rem;
-    text-align: justify;
-    margin-bottom: .7rem;
 }
 .features {
     padding: 1rem 0;
@@ -330,7 +350,7 @@ header {
 .features ul {
     display: flex;
     flex-wrap: wrap;
-
+    
 }
 .features ul li {
     flex: 0 0 47%;
@@ -339,15 +359,6 @@ header {
     background: #fff;
     margin: .2rem;
     border: 1px solid lightgray;
-}
-.grey-circle {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f5f5f5;
 }
 .icon {
     position: absolute;
@@ -364,7 +375,14 @@ header {
     z-index: 3;
     box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc ;
 }
-
+.ml-1 {
+    margin-left: .7rem;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .chev-left {
     left: 3%;
 }
@@ -375,13 +393,13 @@ header {
     background: rgb(255, 0, 68);
     color: #fff;
     border: 1px solid rgb(255, 0, 68);
-
+    
 }
 .btn-primary {
     background: #0c0c66;
     color: #fff;
     border: 1px solid #0c0c66;
-
+    
 }
 .btn-md {
     margin-top: .7rem;
@@ -394,18 +412,31 @@ header {
     display: flex;
     align-items: center;
 }
-
 .btn-md i {
     margin-right: .3rem;
 }
-.intro-image {
-    background: url('../img/coded_prof_intro.jpg') no-repeat center center/cover;
-    width: 9rem;
-    height: 9rem;
-    border-radius: 25%;
-    transform: translateY(-120rem);
-    animation: slidedown var(--animation-speed) forwards ease;
-}
+
+/* .grey-circle {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+} */
+/* .text-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+} */
+/* .text-header p{
+    width: 100%;
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: .7rem; */
 
 footer {
     display: flex;
