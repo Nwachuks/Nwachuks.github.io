@@ -20,15 +20,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
             integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
         <link rel="stylesheet" href="./css/style.css">
-        <title>Software Engineer</title>
+        <title>iOS Software Engineer</title>
     </head>
     <body>
         <header>
             <nav class="header__nav">
                 <div>
                     <h3 class="header__nav-text">Nwachukwu Ejiofor</h3>
-                    <div>aka Coded Prof</div>
-                    <div>Full-Stack Software Engineer</div>
+                    <!-- <div>aka Coded Prof</div> -->
+                    <div>Software Engineer (iOS)</div>
                 </div>
                 <ul>
                     <li class="current"><a href="#intro" class="btn">Intro</a></li>
@@ -39,9 +39,10 @@
             </nav>
             <div class="intro">
                 <div class="intro-image"></div>
-                <h3>Hi! I'm Nwachukwu Ejiofor, a Mid-Level Software Engineer.</h3>
-                <p>I'm passionate about developing and deploying software that makes people's daily
-                    lives easier and better.</p>
+                <h3>Hi! I'm Nwachukwu Ejiofor, an iOS Software Engineer.</h3>
+                <p>I'm passionate about developing and deploying apps and software that makes people's daily
+                    lives easier and better.
+                </p>
                 <a href="#work" class="btn">See My Work
                     <img src="./img/right_arrow.png">
                 </a>
@@ -54,15 +55,17 @@
                     <img src="./img/coded_prof_about.jpg" class="about-photo">
                     <div class="text-center">
                         <div class="school">B.Sc Food Engineering</div>
-                        <div>Obafemi Awolowo University, Ile-Ife</div>
+                        <div>Obafemi Awolowo University, Ile-Ife, Nigeria</div>
                     </div>
                 </div>
                 <div class="skills-box">
+                    <div class="progressive-bar"><div>Swift</div><div class="swift"></div></div>
+                    <div class="progressive-bar"><div>Objective C</div><div class="objc"></div></div>
                     <div class="progressive-bar"><div>JavaScript</div><div class="js"></div></div>
-                    <div class="progressive-bar"><div>Angular</div><div class="ng"></div></div>
+                    <!-- <div class="progressive-bar"><div>Angular</div><div class="ng"></div></div> -->
                     <div class="progressive-bar"><div>NodeJS</div><div class="npm"></div></div>
-                    <div class="progressive-bar"><div>C#</div><div class="cs"></div></div>
-                    <div class="progressive-bar"><div>DotNet Core</div><div class="dnet"></div></div>
+                    <!-- <div class="progressive-bar"><div>C#</div><div class="cs"></div></div> -->
+                    <div class="progressive-bar"><div>DotNet</div><div class="dnet"></div></div>
                     <div class="progressive-bar"><div>DevOps</div><div class="cicd"></div></div>
                     <div class="progressive-bar"><div>Data Science</div><div class="ds"></div></div>
                 </div>
@@ -73,10 +76,11 @@
             <div class="work-container">
                 <div class="work-tab">
                     <ul>
-                        <li>All</li>
+                        <!-- <li>All</li> -->
+                        <li>Swift</li>
+                        <li>ObjC</li>
                         <li>DotNet Core</li>
                         <li>NodeJS</li>
-                        <li>Swift</li>
                     </ul>
                 </div>
                <div class="work-nav">
@@ -86,28 +90,25 @@
                         <div class="work-flex">
                             <div class="box work-1"></div>
                             <div class="flex-col">
-                                <h2>Datify</h2> 
+                                <h2>Scan App</h2> 
                                 <p>
-                                    Datify is a dating app that helps people find love matches. Users update 
-                                    their profile with their personal info. They can also upload their photos, 
-                                    set a main photo and change it as desired. Users can like, send and receive messages to/from
-                                    their matches to indicate their interest. They can also see when their messages have been read. This was built with Angular 
-                                    and DotNet Core.
+                                    Scan App is an iOS app to scan QR codes to confirm your reservation in a restaurant that you had previously reserved.
+                                    When the QR code is successfully scanned, the details of the reservation are displayed for both the client and
+                                    the restaurant to see. After payment is made, the payment details are recorded on the app and sent to the server
+                                    for proper record-keeping. List of all reservations and the status of each can be viewed at any time and the
+                                    reservation details can be updated as appropriate.
                                 </p>
                                 <div class="features">
                                     <div class="work-features">Features</div>
                                     <ul>
-                                        <li>Server Side Caching</li>
+                                        <li> QR code scanning</li>
                                         <li>Authentication</li>
-                                        <li>Private Messaging System</li>
-                                        <li>Photo Uploads</li>
-                                        <li>Paging, Sorting and Filtering</li>
-                                        <li>Manage User/Admin Roles</li>
+                                        <li>Reservation details</li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
-                                    <a class="btn-md btn-danger" href="https://datify.azurewebsites.net/home">Visit Datify</a>
-                                    <a class="btn-md btn-primary ml-1 align-center" href="https://github.com/Nwachuks/Datify">
+                                    <a class="btn-md btn-danger" href="https://scanapp.azurewebsites.net/home">Visit Scan App</a>
+                                    <a class="btn-md btn-primary ml-1 align-center" href="https://github.com/Nwachuks/ScanApp">
                                         <i class="fab fa-github fa-2x"></i>
                                         Github
                                     </a>
@@ -117,26 +118,22 @@
                         <div class="work-flex d-none">
                             <div class="box work-2"></div>
                             <div class="flex-col">
-                                <h2>Buyify</h2> 
+                                <h2>Convertify</h2> 
                                 <p>
-                                    Buyify helps users effectively manage their e-commerce activities. Users can view products and product 
-                                    details, and add products to cart. Admins can perform CRUD functionalities on products, 
-                                    stores, brands and merchants. Payments are sorted using an integrated Paystack online 
-                                    payment solution. This was built with the MEAN stack (MongoDB, Express, Angular and NodeJS).
+                                    Convertify is an iOS app to help in currency conversion using conversion rates provided by
+                                    Fixer.io. This app helps in real-time currency conversion from any currency to any other
+                                    currency. Your can also see the latest currency rates in real-time.
                                 </p>
                                 <div class="features">
                                     <div class="work-features">Features</div>
                                     <ul>
-                                        <li>Server Side Caching</li>
-                                        <li>Role-based Authentication</li>
-                                        <li>Manage User/Admin Roles</li>
-                                        <li>Photo Uploads</li>
-                                        <li>Sort Products</li>
+                                        <li>Real-time currency conversion</li>
+                                        <li>Real-time currency rates</li>
                                     </ul>
                                 </div>
                                 <div class="btn-group">
-                                    <a class="btn-md btn-danger" href="https://buyify.azurewebsites.net">Visit Buyify</a>
-                                    <a class="btn-md btn-primary ml-1" href="https://github.com/Nwachuks/Buyify">
+                                    <a class="btn-md btn-danger" href="https://convertify.azurewebsites.net">Visit Buyify</a>
+                                    <a class="btn-md btn-primary ml-1" href="https://github.com/Nwachuks/Convertify">
                                         <i class="fab fa-github fa-2x"></i>
                                         Github
                                     </a>
@@ -193,13 +190,75 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="work-flex d-none">
+                            <div class="box work-5"></div>
+                            <div class="flex-col">
+                                <h2>Datify</h2> 
+                                <p>
+                                    Datify is a dating app that helps people find love matches. Users update 
+                                    their profile with their personal info. They can also upload their photos, 
+                                    set a main photo and change it as desired. Users can like, send and receive messages to/from
+                                    their matches to indicate their interest. They can also see when their messages have been read. This was built with Angular 
+                                    and DotNet Core.
+                                </p>
+                                <div class="features">
+                                    <div class="work-features">Features</div>
+                                    <ul>
+                                        <li>Server Side Caching</li>
+                                        <li>Authentication</li>
+                                        <li>Private Messaging System</li>
+                                        <li>Photo Uploads</li>
+                                        <li>Paging, Sorting and Filtering</li>
+                                        <li>Manage User/Admin Roles</li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <a class="btn-md btn-danger" href="https://datify.azurewebsites.net/home">Visit Datify</a>
+                                    <a class="btn-md btn-primary ml-1 align-center" href="https://github.com/Nwachuks/Datify">
+                                        <i class="fab fa-github fa-2x"></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="work-flex d-none">
+                            <div class="box work-2"></div>
+                            <div class="flex-col">
+                                <h2>Buyify</h2> 
+                                <p>
+                                    Buyify helps users effectively manage their e-commerce activities. Users can view products and product 
+                                    details, and add products to cart. Admins can perform CRUD functionalities on products, 
+                                    stores, brands and merchants. Payments are sorted using an integrated Paystack online 
+                                    payment solution. This was built with the MEAN stack (MongoDB, Express, Angular and NodeJS).
+                                </p>
+                                <div class="features">
+                                    <div class="work-features">Features</div>
+                                    <ul>
+                                        <li>Server Side Caching</li>
+                                        <li>Role-based Authentication</li>
+                                        <li>Manage User/Admin Roles</li>
+                                        <li>Photo Uploads</li>
+                                        <li>Sort Products</li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <a class="btn-md btn-danger" href="https://buyify.azurewebsites.net">Visit Buyify</a>
+                                    <a class="btn-md btn-primary ml-1" href="https://github.com/Nwachuks/Buyify">
+                                        <i class="fab fa-github fa-2x"></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
         <footer class="contact" id="contact">
             <div>
-                Copyright &copy; 2020 by <strong>Nwachukwu Ejiofor</strong> aka Coded Prof<br/>
+                Copyright &copy; 2020 by <strong>Nwachukwu Ejiofor</strong> 
+                <!-- aka Coded Prof -->
+                <br/>
             </div>
             <div class="contact-email"> 
                 <span>Contact Me:</span> <a href="mailto:nwachukwuejiofor@gmail.com">nwachukwuejiofor@gmail.com</a>

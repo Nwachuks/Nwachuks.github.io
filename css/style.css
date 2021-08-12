@@ -205,30 +205,42 @@ header {
     align-items: center;
     justify-content: center;
 }
-.progressive-bar .js {
+.progressive-bar .swift {
     background: rgb(0, 255, 136);
     height: 100%;
-    width: 30%;
+    width: 60%;
     display: flex;
 }
-.progressive-bar .ng {
+.progressive-bar .objc {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 45%;
+    display: flex;
+}
+.progressive-bar .js {
     background: rgb(0, 255, 136);
     height: 100%;
     width: 50%;
     display: flex;
 }
+/* .progressive-bar .ng {
+    background: rgb(0, 255, 136);
+    height: 100%;
+    width: 50%;
+    display: flex;
+} */
 .progressive-bar .npm {
     background: rgb(0, 255, 136);
     height: 100%;
     width: 40%;
     display: flex;
 }
-.progressive-bar .cs {
+/* .progressive-bar .cs {
     background: rgb(0, 255, 136);
     height: 100%;
     width: 50%;
     display: flex;
-}
+} */
 .progressive-bar .dnet {
     background: rgb(0, 255, 136);
     height: 100%;
@@ -271,7 +283,7 @@ header {
 .work-tab {
     width: 73%;
     border: 1px solid #f5f5f5;
-    border-left: 4px solid #f04;
+    /* border-left: 4px solid #f04; */
 }
 .work-tab ul {
     display: flex;
@@ -297,11 +309,11 @@ header {
 }
 .work-1 {
     object-fit: cover;
-    background: url('../img/work_datify.jpg') no-repeat center center/cover;
+    background: url('../img/work_scanapp.png') no-repeat center center/cover;
 }
 .work-2 {
     object-fit: cover;
-    background: url('../img/work_buyify.png') no-repeat center center/cover;
+    background: url('../img/work_convertify.png') no-repeat center center/cover;
 }
 .work-3 {
     object-fit: cover;
@@ -311,6 +323,14 @@ header {
     object-fit: cover;
     background: url('../img/work_cloudify.png') no-repeat center center/cover;
 }
+.work-5 {
+    object-fit: cover;
+    background: url('../img/work_datify.jpg') no-repeat center center/cover;
+}
+/* .work-6 {
+    object-fit: cover;
+    background: url('../img/work_buyify.png') no-repeat center center/cover;
+} */
 .work-con {
     flex: 1;
     position: relative;
